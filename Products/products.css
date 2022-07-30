@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-image: url("https://www.kolpaper.com/wp-content/uploads/2020/11/Luffy-One-Piece-Background.jpg");
+    background-size: cover;
 }
 #logo_img {
     width: 5vw;
