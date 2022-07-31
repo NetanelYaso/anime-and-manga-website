@@ -22,7 +22,7 @@ onload = function print() {
         res.items.forEach((item) => {
             my_div1.innerHTML += `
             <div class="card col-4" style="width: 20rem;">
-            <img src="./imges/monkey_img -1.png" class="card-img-top" alt="...">
+            <img src="/imges/monkey_img -1.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-text">Aliases: ${item.aliases}</p>
                 <p class="card-text">Title: ${item.title}</p>

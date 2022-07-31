@@ -60,7 +60,7 @@ function printAnimeNews() {
         res.forEach(element => {
             console.log(element);
             animeNews.innerHTML += `
-    <div class="card" style="width: 18rem;">
+    <div class="card" style="width: 20rem;">
     <img src="${animeImages[counter++]}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${element.title}</h5>
