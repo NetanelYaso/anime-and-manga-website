@@ -35,44 +35,6 @@ const animeImages = [
     "https://m.media-amazon.com/images/M/MV5BMTYwYjYyZDgtMTQ3My00YTI4LThmZTUtZmU1MjllOWRlOTdhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
 ]
 
-const animeLinksArray = [
-    "https://demonslayer-anime.com/",
-    "https://www.crunchyroll.com/fruits-basket",
-    "https://www.crunchyroll.com/spy-x-family",
-    "https://www.crunchyroll.com/fullmetal-alchemist-brotherhood",
-    "https://myanimelist.net/anime/43608/Kaguya-sama_wa_Kokurasetai__Ultra_Romantic",
-    "https://myanimelist.net/anime/38524/Shingeki_no_Kyojin_Season_3_Part_2",
-    "https://9anime.vc/watch/mo-dao-zu-shi-3rd-season-15809?ep=83846",
-    "https://www.crunchyroll.com/jujutsu-kaisen",
-    "https://myanimelist.net/anime/32935/Haikyuu__Karasuno_Koukou_vs_Shiratorizawa_Gakuen_Koukou",
-    "https://www.rottentomatoes.com/m/demon_slayer_kimetsu_no_yaiba_the_movie_mugen_train",
-    "https://myanimelist.net/anime/40028/Shingeki_no_Kyojin__The_Final_Season",
-    "https://www.imdb.com/title/tt5311514/",
-    "https://myanimelist.net/anime/28891/Haikyuu_Second_Season",
-    "https://animixplay.to/v1/haikyuu-second-season/ep20",
-    "https://www.imdb.com/title/tt5323662/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-    "https://www.imdb.com/title/tt2098220/",
-]
 let counter1 = 0;
 let counter2 = 0;
 const options = {
@@ -84,6 +46,7 @@ const options = {
 };
 
 // async function getAnimeAndMangaApi() {
+// loader.innerHTML = `<img id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`;
 //     try {
 //         return await fetch('https://top-anime.p.rapidapi.com/anime/3/5', options)
 //             .then(response => response.json())
@@ -91,7 +54,10 @@ const options = {
 //     catch (error) {
 //         console.log("err");
 //     }
-//     finally { }
+//     finally { 
+    loader.innerHTML = ` `;
+
+//}
 // }
 // getAnimeAndMangaApi().then(response => console.log(response));
 
@@ -106,7 +72,7 @@ function printAnimeNews() {
                         <h5 class="card-title">${element.title}</h5>
                         <p class="card-text">Address: ${element.address}</p>
                         <p class="card-text">Title: ${element.title}</p>
-                        <a href="#" class="btn btn-primary">Click Here ${animeLinksArray[counter2++]}</a>
+                        <a href="#" class="btn btn-primary">Click Here</a>
                     </div>
                 </div>
                 `

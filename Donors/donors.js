@@ -2,7 +2,7 @@
 
 async function getUsers() {
     try {
-        loader.innerHTML = `imges/loading.png`
+
         return await fetch(USERS_API)
             .then(res => res.json())
     }
@@ -10,7 +10,7 @@ async function getUsers() {
         console.log("error");
     }
     finally { 
-        loader.innerHTML = " "
+        loader.innerHTML = ``
     }
 }
 

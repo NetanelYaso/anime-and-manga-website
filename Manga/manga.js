@@ -54,11 +54,16 @@ const options = {
 
 async function getManga() {
     try {
+        loader.innerHTML = `<img id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`;
         // return await fetch('https://jikan1.p.rapidapi.com/manga/2/characters', options)
         //     .then(response => response.json())
     }
     catch (error) {
         console.log("err");
+    }
+    finally{
+        loader.innerHTML = ``;
+
     }
 }
 getManga().then(response => console.log(response))

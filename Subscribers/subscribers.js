@@ -1,23 +1,24 @@
 const WANTED_API = `https://api.fbi.gov/wanted/v1/list`;
 
 async function getWanted() {
+    loader.innerHTML = `<img id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`;
     try {
-        loading_gif.innerHTML = `./imges/loading.png`;
         return await fetch(WANTED_API).then(response => response.json());
 
-    } catch (error) {
+    } 
+    catch (error) {
         console.log("error");
     }
     finally {
-        loading_gif.innerHTML = " ";
-     }
+        loader.innerHTML = ""
+    }
 }
 
 getWanted().then(res => console.log(res.items))
 
 
 
-onload = function print() {
+function print() {
     getWanted().then(res =>
         res.items.forEach((item) => {
             my_div1.innerHTML += `
@@ -36,3 +37,4 @@ onload = function print() {
             `
         }));
 }
+print();
