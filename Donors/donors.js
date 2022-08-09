@@ -1,8 +1,8 @@
  const USERS_API = "https://my-json-server.typicode.com/Jeck99/fake-server/users";
 
 async function getUsers() {
+    loader.innerHTML = `<img width ='150' id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`
     try {
-
         return await fetch(USERS_API)
             .then(res => res.json())
     }
