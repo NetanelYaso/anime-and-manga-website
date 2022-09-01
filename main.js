@@ -48,8 +48,8 @@ const options = {
 async function getAnimeAndMangaApi() {
 // loader.innerHTML = `<img id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`;
     try {
-        // return await fetch('https://top-anime.p.rapidapi.com/anime/3/5', options)
-        //     .then(response => response.json())
+        return await fetch('https://top-anime.p.rapidapi.com/anime/3/5', options)
+            .then(response => response.json())
     }
     catch (error) {
         console.log("err");

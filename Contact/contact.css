@@ -6,3 +6,8 @@ body{
 #logo_img {
     width: 5vw;
 }
+
+#signUp_btn{
+    text-decoration: none;
+    color: red;
+}
