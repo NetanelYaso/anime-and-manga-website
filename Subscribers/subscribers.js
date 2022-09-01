@@ -28,7 +28,7 @@ function print() {
                 <p class="card-text">Title: ${item.title}</p>
                 <p class="card-text">Aliases: ${item.aliases}</p>
                 <p class="card-text">Dates of birth: ${item.dates_of_birth_used}</p>
-                <p class="card-text">Description: ${item.description}</p>
+                <p class="card-text">: ${item.description}</p>
                 <p class="card-text">Languages: ${item.languages}</p>
                 <p class="card-text">Nationality: ${item.nationality}</p>
                 <p class="card-text">Place of birth: ${item.place_of_birth}</p>

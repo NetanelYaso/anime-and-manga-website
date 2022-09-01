@@ -1,4 +1,4 @@
- const USERS_API = "https://my-json-server.typicode.com/Jeck99/fake-server/users";
+const USERS_API = "https://my-json-server.typicode.com/Jeck99/fake-server/users";
 
 async function getUsers() {
     loader.innerHTML = `<img width ='150' id ="loading_gif" src='https://thilaldavid.com/wp-content/uploads/2021/10/loading-1.gif'>`
@@ -9,12 +9,12 @@ async function getUsers() {
     catch (error) {
         console.log("error");
     }
-    finally { 
+    finally {
         loader.innerHTML = ``
     }
 }
 
-getUsers().then(response=>console.log(response))
+getUsers().then(response => console.log(response))
 
 const usersArray = [
     "https://m.media-amazon.com/images/M/MV5BMTY4OTAxMjkxN15BMl5BanBnXkFtZTgwODg5MzYyMTE@._V1_UY1200_CR84,0,630,1200_AL_.jpg",
@@ -34,10 +34,8 @@ const namesArray = [
     "Prince Harry",
     "Dwein Jonson(The Rock)",
     "Beyonce",
-    "Chris Brown",
     "Rihhana",
     "Pop Smoke",
-    "Ariana Grande",
     "Drake",
     "Jusin Biber",
 
@@ -45,9 +43,9 @@ const namesArray = [
 let counter1 = 0;
 let counter2 = 0
 function printUsers() {
-    getUsers().then(res=>{
-        res.forEach(user=>{
-            usersDiv.innerHTML+= `
+    getUsers().then(res => {
+        res.forEach(user => {
+            usersDiv.innerHTML += `
             <div class="card col-4" style="width: 18rem;">
             <img src="${usersArray[counter1++]}" class="card-img-top" alt="...">
                 <div class="card-body">
